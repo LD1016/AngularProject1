@@ -1,3 +1,10 @@
+1. Loops with ngFor
+2. Conditionals with ngIf
+3. Property Binding
+4. Class bindinng & ngClass 
+5. Style binding & ngStyle 
+6. Pipes & ngStyle
+
 # Angularapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
