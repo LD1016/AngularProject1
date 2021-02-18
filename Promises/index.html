@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <button>Click me!</button>
+    <script>
+      const startGame = () => {
+        let count = 0;
+        document.querySelector('button').addEventListener('click', () => {
+          count += 1;
+        });
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (count >= 6) {
+              resolve();
+            } else {
+              reject();
+            }
+          }, 2000);
+        });
+      };
+
+      startGame()
+        .then(() => alert('YOU WIN!'))
+        .catch(() => alert('You lost!'));
+    </script>
+  </body>
+</html>
